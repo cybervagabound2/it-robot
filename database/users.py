@@ -6,7 +6,7 @@ class DbUsers(Database):
     def get_single(self, user_id):
         sql = "SELECT * FROM users WHERE user_id = '{}'".format(user_id)
         user = self._read(sql)
-        return None if len(user) == 0 else user
+        return user
 
     def get_all(self):
         sql = "SELECT * FROM users;"

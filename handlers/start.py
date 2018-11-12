@@ -21,7 +21,7 @@ def start(bot, update):
 
 def add_user(update):
     dbusers = database.users.DbUsers()
-    user = dbusers.get_single(user_id=update.message.chat.id)
+    user = dbusers.get_single(user_id=update.message.from_user.id)
     if user == None:
         new_user = []
         new_user.append(update.message.from_user.id)

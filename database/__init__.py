@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 _cursor_class = psycopg2extras.DictCursor
 
 # Database info
-_conn_string = "host='localhost' port='5432' user='it-robot' password='3y%5fW?**' dbname='it-robot'"
+_conn_string = "host='localhost' port='5432' user='postgres' password='yTz!E_8W' dbname='it-robot'"
 
 
 class Database:
